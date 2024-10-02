@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      #myCar {
+        position: relative;
+        height: 200px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="Start" onclick="Start()" />
+    <input type="button" value="Reverse" onclick="Reverse()" />
+    <input type="button" value="Stop" onclick="Stop()" />
+    <br />
+    <hr />
+    <img src="image.png" id="myCar" />
+    <hr style="margin-right: 500px" />
+    <h2 id="message"></h2>
+     X-axis<div id="xaxix" style="width: 300px; border: 1px solid;"></div>
+     Y-axis<div id="yaxix"style="width: 300px; border: 1px solid;"></div>
+    <script>
+      var counter = 0;
+      var id = 0;
+      var yaxix = 0;
+      var refTomyCar = document.getElementById("myCar");
+      var reftaxix=document.getElementById("xaxix")
+      var reftyxix=document.getElementById("yaxix")
+
+      function Start() {
+        Stop();
+        id = setInterval(ExecuteMe, 80);
+      }
+
+      function Reverse() {
+        Stop();
+        id = setInterval(ExecuteMe2, 80);
+      }
+
+      function ExecuteMe() {
+
+        reftaxix.innerText=counter;
+        if (counter >= 1000) {
+          Stop();
+          id = setInterval(ExecuteMe3, 80);
+        }
+        counter += 20;
+        refTomyCar.style.left = counter + "px";
+      }
+
+      function ExecuteMe2() {
+        if (counter <= 0) {
+          Stop();
+          return;
+        }
+        counter -= 20;
+        refTomyCar.style.left = counter + "px";
+      }
+
+      function ExecuteMe3() {
+        reftyxix.innerText=yaxix;
+        if (yaxix >= 400) {
+          var refttomessage = document.getElementById("message");
+          refttomessage.innerText = "Car Dropped.........";
+          Stop();
+        }
+        yaxix += 20;
+        refTomyCar.style.top = yaxix + "px";
+      }
+
+      function Stop() {
+        clearInterval(id);
+      }
+    </script>
+  </body>
+</html>

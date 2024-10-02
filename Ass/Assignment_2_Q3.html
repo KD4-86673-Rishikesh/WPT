@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Sticky</title>
+    <style>
+      table {
+        width: auto;
+        border-collapse: separate;
+        border-spacing: 10px;
+      }
+
+      td {
+        border: 1px solid white;
+        height: 150px;
+        width: 20%;
+        text-align: center;
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      input[type="text"] {
+        flex-grow: 1;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        text-align: center;
+        vertical-align: top;
+        padding-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      .header-container {
+        height: 40px;
+        width: 50%;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-family: cursive;
+      }
+
+      .icons-container {
+        display: flex;
+        margin-left: 25px;
+      }
+      .icons-container2 {
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
+      }
+
+      .icons-container img {
+        width: 25px;
+        height: 25px;
+      }
+      .icons-container2 img {
+        width: 25px;
+        height: 25px;
+      }
+      .text-label {
+        font-size: 12px;
+        color: black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(79, 79, 79)">
+    <center>
+      <div style="border-radius: 10px" class="header-container">
+        <div class="title-container">
+          <label>HTML5STICKY</label><br />
+          <label>sticky notes for web !</label>
+        </div>
+        <div class="icons-container">
+          <img src="add.svg" alt="Add Icon" />
+          <img src="close.svg" alt="" />
+          <img src="document.svg" alt="" />
+          <img src="document.svg" alt="" />
+        </div>
+        <div class="icons-container2">
+          <img src="logo.svg" alt="" />
+          <input
+            style="
+              background-color: rgb(124, 183, 237);
+              border: none;
+              border-radius: 4px;
+            "
+            type="button"
+            value="$ Donate"
+          />
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <td style="background-color: red">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div>
+                <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+                <img style="height: 20px; width: 30px" src="wrong.png" />
+              </div>
+
+              <label style="margin-top: 5px">28-May-2024 12:40 PM</label>
+              <input
+                style="background-color: red"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+          <td style="background-color: rgb(118, 136, 218)">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+              <label style="margin-top: 5px">29-May-2024 12:40 PM</label>
+              <input
+                style="background-color: rgb(118, 136, 218)"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+          <td style="background-color: rgb(48, 158, 198)">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+              <label style="margin-top: 5px">30-May-2024 12:40 PM</label>
+              <input
+                style="background-color: rgb(48, 158, 198)"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+          <td style="background-color: red">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+              <label style="margin-top: 5px">31-May-2024 12:40 PM</label>
+              <input
+                style="background-color: red"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: purple">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+              <label style="margin-top: 5px">01-May-2024 12:40 PM</label>
+              <input
+                style="background-color: purple"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+          <td style="background-color: orange">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+              <label style="margin-top: 5px">02-May-2024 12:40 PM</label>
+              <input
+                style="background-color: orange"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+          <td style="background-color: orange">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+              <label style="margin-top: 5px">03-May-2024 12:40 PM</label>
+              <input
+                style="background-color: orange"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+          <td style="background-color: palevioletred">
+            <div
+              class="input-container"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img style="height: 20px; width: 20px" src="pin.jpg" alt="" />
+              <label style="margin-top: 5px">04-May-2024 12:40 PM</label>
+              <input
+                style="background-color: palevioletred"
+                type="text"
+                value="Text Here.."
+              />
+            </div>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAl</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            margin-top: 20px;
+        }
+        .main  input{
+            margin-top: 20px;
+        }
+        .number2
+        {
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        h2{
+            margin-top: 100px;
+        }
+        .div1{
+            margin-top: 10px;
+            font-weight: bold;
+
+        }
+    </style>
+  </head>
+  <body>
+     <center>
+        
+    <h2>Calculator</h2>
+    <div class="main" style="padding-top: 10px;">
+    <div class="div1">Number 1: <br><input id="number1" type="number" /></div>
+    <br />
+    <div id="controlname" style="color: red;"></div>
+
+    <div class="number2">Number 2:<br><input id="number2" type="number" /></div>
+    <br />
+
+    <div id="res" style="color: green; width: 43%;"></div>
+    <input type="button" value="Addition" onclick="Addition()" />
+    <input type="button" value="Subtraction" onclick="Subtraction()" />
+    <input type="button" value="Multiplication" onclick="Multiplication()" />
+    <input type="button" value="Division" onclick="Division()" />
+</center>
+</div>
+    <script>
+      function Addition() {
+    
+         var reftonn1= document.getElementById("number1");
+         var reftonn2= document.getElementById("number2");
+         var result= document.getElementById("res");
+        var finalresult = parseInt(reftonn1.value) + parseInt(reftonn2.value);
+          result.innerText="Result :"+finalresult;
+          result.style.border="2px solid black";
+        }
+      function Subtraction() {
+    
+         var reftonn1= document.getElementById("number1");
+         var reftonn2= document.getElementById("number2");
+         var result= document.getElementById("res");
+        var finalresult = parseInt(reftonn1.value) - parseInt(reftonn2.value);
+          result.innerText="Result :"+finalresult;
+        }
+      function Multiplication() {
+    
+         var reftonn1= document.getElementById("number1");
+         var reftonn2= document.getElementById("number2");
+         var result= document.getElementById("res");
+        var finalresult = parseInt(reftonn1.value) * parseInt(reftonn2.value);
+          result.innerText="Result :"+finalresult;
+        }
+      function Division() {
+    
+         var reftonn1= document.getElementById("number1");
+         var reftonn2= document.getElementById("number2");
+         var result= document.getElementById("res");
+        var finalresult = parseInt(reftonn1.value) / parseInt(reftonn2.value);
+          result.innerText= "Result :"+finalresult;
+        }
+    </script>
+  </body>
+</html
+
